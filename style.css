@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sidebar {
+    background-color: rgb(49, 166, 234);
+    grid-column: 1;
+    grid-row: 1 / 5;
+    padding-left: 20px;
+}
+.logo {
+    color: white;
+    font-size: 20px;
+}
+
+.sidemenu {
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(4, 1fr);
+}
+.sidemenu > a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+.content {
+    padding: 40px;
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 2fr .75fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.card {
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: left;
+}
