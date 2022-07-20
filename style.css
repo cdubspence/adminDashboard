@@ -17,18 +17,39 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+.searchbar {
+    padding: 15px;
+}
+input {
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    width: 80%;
+    border-radius: 25px;
+}
 
 .buttons {
     grid-column: 2;
     grid-row: 2;
 }
 button {
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
     padding: 5px;
+    background-color: rgb(49, 166, 234);
+}
+button:hover {
+    color:rgb(49, 166, 234);
+    background-color: whitesmoke;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
 
 .welcome {
     grid-column: 1;
     grid-row: 2;
+    padding-left: 15px;
 }
 
 .sidebar {
