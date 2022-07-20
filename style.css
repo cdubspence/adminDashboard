@@ -53,7 +53,7 @@ a:hover {
     grid-template-rows: repeat(3, 1fr);
 }
 .card {
-    width: 250px;
+    width: 300px;
     height: 200px;
     border: 2px solid black;
     border-radius: 8px;
